@@ -5,6 +5,7 @@
   "scripts": {
     "build": "tsc",
     "dev": "nodemon --watch \"src/\" --exec \"ts-node src/entry.ts\" -e ts",
+    "debug": "nodemon --watch \"src/\" --exec \"node -r ts-node/register --inspect src/entry.ts\" -e ts",
     "fmt": "prettier --write \"src/**/*.ts\"",
     "fmt:p": "prettier-package-json --write \"*.json\"",
     "prod": "npm run build && node dist/entry.js",
