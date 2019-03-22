@@ -12,18 +12,18 @@
     "test": "jest --no-cache"
   },
   "dependencies": {
-    "@types/express": "^4.16.0",
-    "@types/jest": "^23.3.1",
-    "@types/supertest": "^2.0.5",
-    "express": "^4.16.3",
-    "jest": "^23.5.0",
-    "nodemon": "^1.18.4",
-    "prettier": "^1.14.2",
-    "prettier-package-json": "^2.0.0",
-    "supertest": "^3.1.0",
-    "ts-jest": "^23.1.4",
-    "ts-node": "^7.0.1",
-    "typescript": "^3.0.3"
+    "@types/express": "^4.16.1",
+    "@types/jest": "^24.0.11",
+    "@types/supertest": "^2.0.7",
+    "express": "^4.16.4",
+    "jest": "^24.5.0",
+    "nodemon": "^1.18.10",
+    "prettier": "^1.16.4",
+    "prettier-package-json": "^2.1.0",
+    "supertest": "^4.0.2",
+    "ts-jest": "^24.0.0",
+    "ts-node": "^8.0.3",
+    "typescript": "^3.3.4000"
   },
   "jest": {
     "transform": {
