@@ -4,10 +4,10 @@
   "version": "1.0.0",
   "scripts": {
     "build": "tsc",
-    "dev": "nodemon --watch \"src/\" --exec \"ts-node src/entry.ts\" -e ts",
-    "debug": "nodemon --watch \"src/\" --exec \"node -r ts-node/register --inspect src/entry.ts\" -e ts",
-    "fmt": "prettier --write \"src/**/*.ts\"",
-    "fmt:p": "prettier-package-json --write \"*.json\"",
+    "dev": "nodemon src/entry.ts",
+    "dev:debug": "nodemon --inspect src/entry.ts",
+    "fmt": "prettier --write '**/*.{js,ts}'",
+    "fmt:p": "prettier-package-json --write",
     "prod": "npm run build && node dist/entry.js",
     "test": "jest --no-cache"
   },
@@ -23,7 +23,8 @@
     "supertest": "^4.0.2",
     "ts-jest": "^24.0.0",
     "ts-node": "^8.0.3",
-    "typescript": "^3.3.4000"
+    "typescript": "^3.3.4000",
+    "winston": "^3.2.1"
   },
   "jest": {
     "transform": {
@@ -38,5 +39,10 @@
       "json",
       "node"
     ]
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "arrowParens": "always"
   }
 }

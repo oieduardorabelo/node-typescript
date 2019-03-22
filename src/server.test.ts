@@ -1,8 +1,8 @@
-import req from "supertest";
+import req from 'supertest';
 
-import server from "./server";
+import server from './server';
 
-test("[GET] /", async () => {
-  const res = await req(server).get("/");
-  expect(res.text).toBe("Hello ts-node!");
+test('[GET] /_healthcheck', async () => {
+  const res = await req(server).get('/_healthcheck');
+  expect(typeof res.body.uptime).toBe('number');
 });

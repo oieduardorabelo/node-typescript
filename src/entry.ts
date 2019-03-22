@@ -1,5 +1,17 @@
-import server from "./server";
+import logger from './core/logger';
+import secrets from './core/secrets';
+import server from './server';
 
-server.listen(3000, () => {
-  console.log(`[SERVER] Running at http://localhost:3000`);
+async function main() {
+  await server.listen({ port: secrets.PORT, host: secrets.HOST });
+  logger.info(`Running at http://${secrets.HOST}:${secrets.PORT}`);
+}
+
+process.on('unhandledRejection', (err) => {
+  if (err) {
+    logger.error(err);
+  }
+  process.exit(1);
 });
+
+main();

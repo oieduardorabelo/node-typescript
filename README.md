@@ -6,22 +6,34 @@ Example for my Medium article [Node.js e TypeScript: O como e com testes](https:
 
 ## Debugging
 
-With this template, you've two options:
+After starting the app with `npm run dev:debug`, you've two options:
 
-- For in-editor debug with VSCode, configuration already included in `.vscode/launch.json`, just click the green arrow in the Debug panel
+1. For in-editor debug with VSCode, configuration already included in `.vscode/launch.json`. It will attach the debbuger to the running process.
+2. You can look at `chrome://inspect` to open a debugger panel using Google Chrome DevTools.
 
-<img src="https://duaw26jehqd4r.cloudfront.net/items/1k2P0w0p15192W2t2X35/Screen%20Shot%202018-10-19%20at%2012.20.29%20AM.png?v=b5939a77" width="80%" alt="VSCode in-editor debug working">
+## Screenshots
 
-- Running the npm`"debug"` script will start Node.js CLI with TypeScript and the `--inspect` flag. Then, you can look at `chrome://inspect` to open a debug panel using Google Chrome browser.
+- Starting the app with `npm run dev:debug`
 
-<a href="https://cl.ly/f417d45289e4">
-  <img src="https://duaw26jehqd4r.cloudfront.net/items/0C1m3d462m451x1u3Z2J/Screen%20Shot%202018-10-19%20at%2012.23.49%20AM.png?v=65f37618" width="80%" alt="Running npm script debug in a terminal window" />
-</a>
-<a href="https://cl.ly/4d422604ace2">
-  <img src="https://duaw26jehqd4r.cloudfront.net/items/272g1w0k1A3k3f091g0Q/Screen%20Shot%202018-10-19%20at%2012.24.46%20AM.png?v=4cc99adf" width="80%" alt="Google Chrome inspect tab showing debug socket" />
-</a>
-<a href="https://cl.ly/c13a1f83719e">
-  <img src="https://duaw26jehqd4r.cloudfront.net/items/0Q2P2a3l0U0s3p031I2z/Screen%20Shot%202018-10-19%20at%2012.25.01%20AM.png?v=a3cbc4c9" width="80%" alt="Google Chrome debug panel open showing log from our server" />
-</a>
+<img src="https://user-images.githubusercontent.com/829902/54861576-74f66180-4d7f-11e9-9498-4871f16ea4d9.png" width="80%" />
 
+- Go to the "Debug" panel in VSCode, press the green arrow for "Node: Nodemon" configutation and select your process
+
+<img src="https://user-images.githubusercontent.com/829902/54861537-ad497000-4d7e-11e9-8e23-19b655880fb9.png" width="80%" />
+
+- VSCode will attach the debbuger and show you a floating panel
+
+<img src="https://user-images.githubusercontent.com/829902/54861552-d538d380-4d7e-11e9-9266-5aba7f688699.png" width="80%" />
+
+- Add a breakpoint anywhere and have fun debugging!
+
+<img src="https://user-images.githubusercontent.com/829902/54861581-9b1c0180-4d7f-11e9-8030-0054f0405783.png" width="80%" />
+
+- On Chrome, you can go to `chrome://inspect` and click `inspect` on the "Remote Target" section pointing to your server
+
+<img src="https://user-images.githubusercontent.com/829902/54861670-32ce1f80-4d81-11e9-982f-80560d8eaa54.png" width="80%" />
+
+- Add a breakpoint anywhere and have fun debugging!
+
+<img src="https://user-images.githubusercontent.com/829902/54861679-5e510a00-4d81-11e9-8545-a14ec1b0f87d.png" width="80%" />
 ---
