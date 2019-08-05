@@ -3,14 +3,14 @@
   "name": "node-typescript",
   "version": "1.0.0",
   "scripts": {
-    "build": "tsc",
+    "build": "run-s build:clean build:code",
     "build:clean": "rimraf dist",
-    "build:prod": "run-s build:clean build",
+    "build:code": "tsc",
     "dev": "nodemon src/entry.ts",
     "dev:debug": "nodemon --inspect src/entry.ts",
     "fmt": "prettier --write '**/*.{js,ts}'",
     "fmt:p": "prettier-package-json --write",
-    "prod": "run-s build:prod && node dist/entry.js",
+    "prod": "run-s build && node dist/entry.js",
     "test": "jest --no-cache"
   },
   "dependencies": {
