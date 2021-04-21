@@ -39,3 +39,7 @@ After starting the app with `npm run dev:debug`, you've two options:
 - Add a breakpoint anywhere and have fun debugging!
 
 <img src="https://user-images.githubusercontent.com/829902/54861679-5e510a00-4d81-11e9-8545-a14ec1b0f87d.png" width="80%" />
+
+## Previous Versions
+
+- [tree/v1](https://github.com/oieduardorabelo/node-typescript/tree/v1)
